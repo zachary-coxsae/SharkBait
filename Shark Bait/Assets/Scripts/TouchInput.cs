@@ -89,7 +89,6 @@ public class TouchInput : MonoBehaviour
 		lastPosition = startPosition;
 
 		GameEvents.OnSwipeStart?.Invoke(startPosition, touchCount);
-		Debug.Log("touch!" + startPosition);
 	}
 
 	private void MoveTouch(Vector2 screenPosition, int touchCount)
@@ -133,6 +132,5 @@ public class TouchInput : MonoBehaviour
 		{
 			GameEvents.OnSwipeEnd?.Invoke(endPosition, moveDirection, moveSpeed, touchCount);
 		}
-	Debug.Log("move to" + endPosition);
 	}
 }

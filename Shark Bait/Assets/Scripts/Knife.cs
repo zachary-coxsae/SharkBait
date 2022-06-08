@@ -32,5 +32,9 @@ public class Knife : MonoBehaviour
         {
             GameEvents.OnFishHit?.Invoke(hitinfo);
         }
+        else
+        {
+            
+        }
     }
 }
